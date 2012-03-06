@@ -10,7 +10,7 @@ group :development, :test do
   gem "sqlite3-ruby", :require => "sqlite3"
 end
 #gem 'postgresql'
-#gem 'activerecord-postgis-adapter'
+gem 'activerecord-postgis-adapter'
 #gem 'activerecord-postgresql-adapter'
  #gem 'mysql2'
  #gem 'activerecord-jdbc-adapter'
