@@ -8,9 +8,10 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 #gem 'postgresql'
-gem 'activerecord-postgis-adapter'
- gem 'mysql2'
- gem 'activerecord-jdbc-adapter'
+#gem 'activerecord-postgis-adapter'
+#gem 'activerecord-postgresql-adapter'
+ #gem 'mysql2'
+ #gem 'activerecord-jdbc-adapter'
 
 # Gems used only for assets and not required
 # in production environments by default.
