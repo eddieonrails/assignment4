@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120305092634) do
+ActiveRecord::Schema.define(:version => 20120319101723) do
 
   create_table "car_dealerships", :force => true do |t|
     t.string   "name"
@@ -30,6 +30,42 @@ ActiveRecord::Schema.define(:version => 20120305092634) do
     t.datetime "updated_at", :null => false
     t.string   "color"
     t.text     "extras"
+  end
+
+  create_table "registrations", :force => true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.string   "student_id"
+    t.integer  "id_no"
+    t.string   "email"
+    t.string   "password"
+    t.string   "campus"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "src_registrations", :force => true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.string   "student_no"
+    t.integer  "id_no"
+    t.string   "email"
+    t.string   "password"
+    t.string   "campus"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "students", :force => true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.string   "Student_id"
+    t.integer  "Id_no"
+    t.string   "email"
+    t.string   "password"
+    t.string   "campus"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

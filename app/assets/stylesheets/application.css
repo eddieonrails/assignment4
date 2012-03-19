@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
 */
+.box {
+width: auto;
+height: auto;
+border: 1px solid #FFFFFF;
+text-align: center;
+}

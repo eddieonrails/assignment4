@@ -1,0 +1,33 @@
+<h1>Listing registrations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Student</th>
+    <th>Id no</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th>Campus</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registration.each do |registration| %>
+  <tr>
+    <td><%= registration.name %></td>
+    <td><%= registration.surname %></td>
+    <td><%= registration.student_id %></td>
+    <td><%= registration.id_no %></td>
+    <td><%= registration.email %></td>
+    <td><%= registration.password %></td>
+    <td><%= registration.campus %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'DONE', 'home/index' %>
