@@ -1,0 +1,51 @@
+<h2>Register for Src</h2>
+
+<%= form_for(@registration) do |f| %>
+  <% if @registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+      <% @registration.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %>
+  </div>
+  <div class="field">
+    student number <br/>
+    <%= f.text_field :student_id %>
+  </div>
+  <div class="field">
+   ID no <br/>
+    <%= f.text_field :id_no %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %><br/>
+  </div>
+  <div class="field">
+    <%= f.label :Campus %>
+                 <%= f.radio_button :campus, 'auckland_park' %>  kingsway (APK)
+                 <%= f.radio_button :campus, 'bunting_road' %>  bunting road (APB)
+                 <%= f.radio_button :campus, 'soweto_campus' %>  soweto campus
+  </div>
+  <div class="actions">
+    <%= f.submit "register", %>
+  </div>
+<% end %>
+
+
